@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+nav{
+  position: fixed;
+  background: #1b1b1b;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+.img{
+  background: url('./OIP.jpg')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+  color: #fff;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: white;
+  color: black;
+}
+.center .btns button:last-child{
+  background: white;
+  color: black;
+}
+
+/*---image section --*/
+.employee-section {
+  text-align: center;
+  padding: 50px 0;
+}
+.employee-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #333;
+}
+.employee-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.employee {
+  width: 180px;
+  text-align: center;
+}
+.employee img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.employee-name {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+      /* Styles for the footer section */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 40px 0;
+      }
+      .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      .footer-column {
+        width: 30%;
+        min-width: 200px;
+      }
+      .footer-column h3 {
+        margin-bottom: 20px;
+        font-size: 1.8em;
+      }
+      .footer-column p,
+      .footer-column ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .footer-column ul li {
+        margin-bottom: 10px;
+      }
+      .footer-column ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      .footer-column ul li a:hover {
+        text-decoration: underline;
+      }
+
+       /* Styles for the service section */
+       .services-section {
+        padding: 50px 20px;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+      .services-section h2 {
+        margin-bottom: 40px;
+        font-size: 2.5em;
+        color: #333;
+      }
+      .services-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .service {
+        width: 45%;
+        min-width: 250px;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      .service h3 {
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        color: #333;
+      }
+      .service p {
+        font-size: 1em;
+        color: #666;
+        line-height: 1.6em;
+      }
+
+       /* Styles for the about section */
+       .about-section {
+        padding: 50px 20px;
+        text-align: center;
+        background-color: #fff;
+      }
+      .about-section h2 {
+        margin-bottom: 20px;
+        font-size: 2.5em;
+        color: #333;
+      }
+      .about-section p {
+        font-size: 1.2em;
+        color: #666;
+        line-height: 1.6em;
+        max-width: 800px;
+        margin: 0 auto;
+      }
